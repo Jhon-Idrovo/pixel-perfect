@@ -1,0 +1,101 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+$base: white;
+$primary: #414f6b;
+$accent: #afb3bd;
+
+$font-family: "Oswald";
+$font-bold: 700;
+
+@mixin font-xs {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@mixin font-sm {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+@mixin font-base {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@mixin font-lg {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+@mixin font-xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+@mixin font-2xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+// UTILS
+.logo {
+  grid-area: logo;
+}
+
+// NAVBAR
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: ". logo menu .";
+}
+
+.nav__list {
+  display: flex;
+  grid-area: menu;
+}
+
+.nav_list-el {
+}
+
+.nav__link {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #fefeff;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Lato";
+}

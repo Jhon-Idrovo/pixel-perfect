@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Goal is to convert this into a single page response site. The carousel should be responsive. On mobile, the tabs should be converted to an accordion. History, team - these are internal links in the page to their respective sections.
